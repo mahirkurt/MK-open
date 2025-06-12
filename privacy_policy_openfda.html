@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Privacy Policy: OpenFDA Repo File Fetcher GPT</title>
+  <style>
+    @page { size: A4; margin: 0 }
+    body {
+      font-family: 'IBM Plex Sans', sans-serif;
+      margin: 40px;
+    }
+    h1, h2 {
+      letter-spacing: -0.02em;
+    }
+    p, li {
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+    .keep-together {
+      page-break-inside: avoid;
+    }
+    .page-break {
+      page-break-before: always;
+    }
+    @media print {
+      * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .keep-together {
+        page-break-inside: avoid !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <article class="bx--tile keep-together">
+    <h1>Privacy Policy: OpenFDA Repo File Fetcher GPT</h1>
+    <p><strong>Effective Date:</strong> June 13, 2025</p>
+  </article>
+
+  <article class="bx--tile keep-together">
+    <h2>1. Purpose and Scope</h2>
+    <p>This Privacy Policy describes how the OpenFDA Repo File Fetcher GPT (“the Application”) processes, stores, and protects data. The Application is designed solely to fetch publicly available files from the FDA/OpenFDA GitHub repository.</p>
+  </article>
+
+  <article class="bx--tile keep-together">
+    <h2>2. Data Collected and Processed</h2>
+    <p><strong>User Inputs:</strong></p>
+    <p>The Application temporarily processes the branch and path parameters provided by the user to construct the GitHub API request.</p>
+    <p>No other user-provided data is collected or stored.</p>
+    <p><strong>Personal Information:</strong></p>
+    <p>The Application does not collect any personally identifiable information (PII), such as names, email addresses, IP addresses, or similar identifiers.</p>
+    <p>No cookies, tracking scripts, or analytics tools are used.</p>
+  </article>
+
+  <article class="bx--tile keep-together">
+    <h2>3. External API Access and Security</h2>
+    <p><strong>Service Used:</strong></p>
+    <p>The Application sends HTTPS GET requests to:</p>
+    <pre><code>https://raw.githubusercontent.com/FDA/openfda/{branch}/{path}</code></pre>
+    <p>Only publicly accessible content is fetched in read-only mode; no authentication or private repository access is employed.</p>
+    <p><strong>Data Transmission:</strong></p>
+    <p>All requests and responses occur over TLS/HTTPS, ensuring encryption in transit.</p>
+    <p>No data is forwarded to third parties beyond the GitHub raw content service.</p>
+  </article>
+
+  <article class="bx--tile keep-together">
+    <h2>4. Data Retention and Deletion</h2>
+    <p><strong>Ephemeral Processing:</strong> User-supplied parameters and the fetched file content are stored only in memory for the duration of the request.</p>
+    <p><strong>Automatic Deletion:</strong> Once the request completes or the session ends, all data is immediately discarded.</p>
+    <p><strong>No Persistent Storage:</strong> The Application does not write any data to disk, database, or logs.</p>
+  </article>
+
+  <article class="bx--tile keep-together">
+    <h2>5. Monitoring and Analytics</h2>
+    <p>The Application does not implement any form of usage analytics, error reporting services, or user-activity tracking.</p>
+    <p>No metrics are recorded or shared.</p>
+  </article>
+
+  <article class="bx--tile keep-together">
+    <h2>6. User Rights and Contact</h2>
+    <p><strong>Access and Correction:</strong> Since no personal data is stored, there are no records to access or correct.</p>
+    <p><strong>Data Deletion Requests:</strong> All data is transient and automatically deleted; no further action is required.</p>
+    <p><strong>Questions and Complaints:</strong></p>
+    <p>Developer: Mahir Kurt</p>
+    <p>GitHub: <a href="https://github.com/mahirkurt">https://github.com/mahirkurt</a></p>
+    <p>Email: <a href="mailto:info@duhan.org?subject=OpenFDA%20GPT%20Privacy">info@duhan.org</a> (Subject: “OpenFDA GPT Privacy”)</p>
+  </article>
+
+  <article class="bx--tile keep-together">
+    <h2>7. Updates to This Policy</h2>
+    <p>This Privacy Policy may be updated periodically. Each revision will update the Effective Date above. Users are encouraged to review this policy regularly to stay informed of any changes.</p>
+  </article>
+</body>
+</html>
